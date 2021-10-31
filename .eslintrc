@@ -16,7 +16,7 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "jest"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
   "extends": [
     "plugin:react/recommended",
     "airbnb",
@@ -71,9 +71,10 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "no-use-before-define": [0],
-        "@typescript-eslint/no-use-before-define": [1],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": "off",
         "import/no-unresolved": 0,
+        "react/require-default-props": 0,
         "import/no-extraneous-dependencies": [
           "error",
           {
@@ -88,7 +89,7 @@
         "quotes": "off",
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+           "single",
           {
             "avoidEscape": true
           }
